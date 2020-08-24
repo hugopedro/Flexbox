@@ -89,3 +89,54 @@ img {
 .menu-nav a:hover {
     color: #122ab2;
 }
+
+/*Introdução*/
+
+.introducao {
+    font-size: 3em;
+    line-height: 1;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 10px; /*padding é interno */
+}
+
+/* Sobre */
+
+.sobre {
+    border-top: 2px solid #2c70ff;
+    border-bottom: 2px solid #2c70ff;
+    max-width: 960px;
+    margin: 0 auto; /*Alinha ao centro */
+    padding: 60px 0; /* 60 px pro topo e pra baixo e 0 prum lado e pro outro */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre-info {
+    /* as divs lá dentro da section são flex-items, o que tiver dentro de lá é flex-item */
+    flex: 2 1 300px; /* flex 2 pra ocupar a metade da area, daí é 2 do texto sobre, 1 pra imagem A e 1 pra imagrm B */
+    /* Equivale a flex 2 pro grow, flex 1 pro shrink e flex 0 pro base ( 2 1 0 ), nesse caso puis 300px pra imagem não bugar quando ficar em tela mt pequena*/
+    margin: 0 10px; /* pra alinhar com o menu, a parte de cima, etc... 10px pra não deixar grudado */
+}
+
+.sobre-info h1 {
+    font-size: 3rem;
+    margin-bottom: .5em;
+}
+
+.sobre-info p {
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    color: #7c7c7c;
+}
+
+.sobre-img {
+    flex: 1 1 160px; /* então o flex base 160px serve pra quando a tela ficar pequena a imagem não bugar e ir pra baixo, com a ajuda do flex-wrap */
+    margin: 0 10px;
+}
+
+
+
+
+
