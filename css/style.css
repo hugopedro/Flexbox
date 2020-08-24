@@ -136,6 +136,47 @@ img {
     margin: 0 10px;
 }
 
+/*Produtos*/
+
+/* Vê o nome da classe antes de iniciar */
+
+.produtos {
+    max-width: 960px;
+    margin: 60px auto;
+}
+
+.produtos h1 {
+    font-size: 3em;
+    margin: 0 10px 60px 10px; /*60 cima e baixo, 10 pro lado esquerdo e direito */
+}
+
+.produtos-container {
+    display: flex; /* coloca automaticamente os produtos em linha */
+    flex-wrap: wrap; /*Quebrar a linha quando o tamanho estourar */
+    align-items: flex-end;
+}
+
+.produtos-item {
+    flex: 1 1 175px; /*flex itens*/;
+    margin: 10px; /* cima baixo e lados */
+}
+
+.produtos-item h2 {
+    font-size: 3em;
+    color: #a4a4a4;
+    background: #f7f7f7;
+    padding: 60px 20px; /* 60px pra cima e pra baixo, 20 pra um lado e pro outro */
+}
+
+.purple {
+    border-top: 8px solid #ae81ff;
+}
+.pink {
+    border-top: 8px solid #f9265e;
+}
+.blue {
+    border-top: 8px solid #66d9eb;
+}
 
 
 
