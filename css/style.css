@@ -48,3 +48,44 @@ img {
 .superinfo a {
     color: white;
 }
+
+/* Menu */
+
+.menu-bg {
+    background:#2c70ff;
+}
+
+.menu {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex; /* É aqui porque é o menu geral que vai pegar a div menu logo e nav, que tá dentro de nav não é flex item   */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+}
+
+.menu-logo a {
+    font-size: 2.25em;
+    font-weight: bold;
+    margin: 0 10px; /* É pro logo não ficar grudado nem do lado esquerdo nem no final */
+}   
+
+.menu-nav ul {
+    display: flex; /* Flex dentro de flex, agora os li são flex items */
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+}
+
+.menu-nav a:hover {
+    color: #122ab2;
+}
