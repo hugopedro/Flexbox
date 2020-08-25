@@ -270,3 +270,47 @@ img {
     } /* não precisou selecionar o cobre pois por padrão é order 0 então vai ficar por ultimo mesmo */
 }
 
+.qualidade {
+    max-width: 960px;
+    margin: 60px auto; /* 60px pra cima e pra baixo, auto pros lados */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.qualidade-item {
+    flex: 1 1 300px; /* 1 de shrink e 300px que é um terço do layout.. assim fica responsivo ao diminuir a tela */
+    margin: 20px 10px; /* cima baixo 20 lados 10 */
+}
+
+.qualidade-item h2{
+    font-size: 2.25em;
+    color: #a4a4a4;
+    margin-bottom: 20px;
+}
+
+.qualidade-item h2::before { /* com isso é possível criar coisas antes do item (h2)... no caso será um retangulozinho colorido */
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.qualidade-item:nth-of-type(3n+1) h2::before {
+    background: #ae81ff;
+    /* isso faz com que ele pegue o primeiro e depois do 1 ele pegue o terceiro item apartir do um*/
+}
+
+.qualidade-item:nth-of-type(3n+2) h2::before {
+	background: #f9265e; /*aqui ele começa apartir do segundo item e pega o terceiro depois dele */
+}
+
+.qualidade-item:nth-of-type(3n+3) h2::before {
+	background: #66d9eb;
+}
+
+.qualidade-item p {
+	font-size: 1.25em;
+	line-height: 1.4;
+	color: #7c7c7c;
+}
